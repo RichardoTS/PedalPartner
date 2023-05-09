@@ -38,7 +38,7 @@ def post_registarticulo():
     except Exception as e:
         print("fala en articulo", e)
 
-        return jsonify({"msg":"Ingreso de Articulo Fallido"})
+        return jsonify({"msg":"Ingreso de Articulo Fallido"}), 400
 
 # gestion leer articulo SE PUEDE INICIAR INTEGRACION CON FROND (5)
 @bpArticulo.route('/getarticulo',methods=['GET'])
